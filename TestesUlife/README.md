@@ -2,7 +2,7 @@
 
 ### Este é projeto acadêmico que compreende o desenvolvimento de um sitema para realizar teste automatizados na plataforma digital Ulife, utilizando a linguagem de programação Java, juntamente do framework Junit e do emulador de usuários Selenuim WebDriver.
 
-![ulife](https://github.com/Pedro-Henrique-Santana-Xavier/Testes-Ulife-projeto-A3/assets/113522505/ee55ca8a-eef9-46a5-8337-fb01682bfd06)
+![img_ul.png](Imagens/img_ul.png)
 
 ## Integrantes e Professores
 
@@ -21,7 +21,7 @@
 
 ## Objetivos do projeto
 
-![Screenshot_1](https://github.com/Pedro-Henrique-Santana-Xavier/Testes-Ulife-projeto-A3/assets/113522505/c9a5deae-748a-4921-8db3-60cf9a4f35dd)
+![img_ob.png](Imagens/img_ob.png)
 
 Conforme o que foi dito na introdução, o software escolhido para o desenvolvimento dos testes foi o site Ulife. 
 Como o site possui uma quantidade considerável de funções, apenas 2 funcionalidades, a página de login e o sistema de
