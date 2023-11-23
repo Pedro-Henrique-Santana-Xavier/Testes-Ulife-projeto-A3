@@ -2,7 +2,7 @@
 
 ### Este é projeto acadêmico que compreende o desenvolvimento de um sitema para realizar teste automatizados na plataforma digital Ulife, utilizando a linguagem de programação Java, juntamente do framework Junit e do emulador de usuários Selenuim WebDriver.
 
-![ulife](https://github.com/Pedro-Henrique-Santana-Xavier/Testes-Ulife-projeto-A3/assets/113522505/ee55ca8a-eef9-46a5-8337-fb01682bfd06)
+![img_ul](https://github.com/Pedro-Henrique-Santana-Xavier/Testes-Ulife-Projeto-A3/assets/113522505/4197d061-0b54-40a2-94a6-2e6adc566de5)
 
 ## Integrantes e Professores
 
@@ -21,7 +21,7 @@
 
 ## Objetivos do projeto
 
-![Screenshot_1](https://github.com/Pedro-Henrique-Santana-Xavier/Testes-Ulife-projeto-A3/assets/113522505/c9a5deae-748a-4921-8db3-60cf9a4f35dd)
+![img_ob](https://github.com/Pedro-Henrique-Santana-Xavier/Testes-Ulife-Projeto-A3/assets/113522505/0389d6d9-c550-4bd8-b376-f18ea1dfff63)
 
 Conforme o que foi dito na introdução, o software escolhido para o desenvolvimento dos testes foi o site Ulife. 
 Como o site possui uma quantidade considerável de funções, apenas 2 funcionalidades, a página de login e o sistema de
@@ -31,7 +31,8 @@ envio e recebimento de mensagens.
 
 Esta é a estrutura de arquivos do projeto
 
-![img.png](Imagens/img.png)
+
+![img](https://github.com/Pedro-Henrique-Santana-Xavier/Testes-Ulife-Projeto-A3/assets/113522505/60707c82-75d0-4b7d-9519-06dcf7a7ae8c)
 
 Onde as pastas driver e test são as mais utilizadas. Na pasta driver está o driver do chrome, que necessário para que o selenium WebDriver possa utilizar as funcionalidades do navegador. E a pasta de tests, na qual está o código principal do projeto, os testes.
 
@@ -62,7 +63,7 @@ Também vale destacar as dependências utilizadas no projeto, que estão no arqu
 ### Classe "MensagensTests"
 
 #### método "DeveriaEfetuarLogin"
-![img_1.png](Imagens/img_1.png)
+![img_1](https://github.com/Pedro-Henrique-Santana-Xavier/Testes-Ulife-Projeto-A3/assets/113522505/96e7b7af-2ab4-49e6-8bcc-d370cc7e34fd)
 
 Este é o primeiro método da classe de test, como principais pontos de destaque, é possivel apontar a annotation @Test (linha 17)
 que define o método "DeveriaEfetuarLogin" como um método de para testes.
@@ -81,13 +82,13 @@ driver.findElement(By.id("txtLogin")); o parâmetro definido foi o id do element
 
 Neste método também é possivel visualizar um assert, que é um método do Junit utilizado para verificar se uma condição é verdadeira.
 
-![img_3.png](Imagens/img_3.png)
+![img_3](https://github.com/Pedro-Henrique-Santana-Xavier/Testes-Ulife-Projeto-A3/assets/113522505/edc70e99-4017-436e-ba81-fa9ccdfaada2)
 
 Neste caso temos a String h1PaginaInicialEsperado (linha 33), que é o valor que esperamos encontrar em determinado elemento (linha 35).
 
 Caso o assert não seja verdadeiro será exibida uma mensagem de erro;
 
-![img_4.png](Imagens/img_4.png)
+![img_4](https://github.com/Pedro-Henrique-Santana-Xavier/Testes-Ulife-Projeto-A3/assets/113522505/d273dcc5-b3f1-41d0-b4ed-a9fe2c69aed9)
 
 O erro foi forçado apenas para exemplificação.
 
@@ -98,7 +99,7 @@ Neste método o sistema de envio e recebimento de mensagens é testado. Embora e
 E os iframes são uma dessas peculiaridades, os iframes (Inline frames) são tags HTML usadas para incorporar um documento HTML dentro de outro. 
 Ele permite que você inclua conteúdo de uma fonte externa, como uma página da web, em um documento HTML, ou seja, para localizar elementos que estejam dentro de um iframe é necessario acessá-lo.  
 
-![img_5.png](Imagens/img_5.png)
+![img_5](https://github.com/Pedro-Henrique-Santana-Xavier/Testes-Ulife-Projeto-A3/assets/113522505/cb3536f4-ccad-4661-8f70-c98cbc48209c)
 
 Na linha 60, estamos localizando um iframe na página pelo seu id, que neste caso é "iMessage", e o armazenando na variável iframeDestinatario que é do tipo WebElement. WebElement é uma interface do selenium, que armazena elementos de uma página web.
 
@@ -107,19 +108,19 @@ Ao mudar o foco, podemos localizar elementos dentro do iframe.
 
 Outro ponto importante é o uso do como Thread.sleep;
 
-![img_6.png](Imagens/img_6.png)
+![img_6](https://github.com/Pedro-Henrique-Santana-Xavier/Testes-Ulife-Projeto-A3/assets/113522505/0412d906-330f-4dc9-b296-7010388412e9)
 
 As vezes o Selenium é executado mais rápido que o navegador, por conta disso alguns elementos que são carregados com atraso podem ser encontrados, ocasionando erros. Neste caso está sendo feita uma pausa de 2 segundos na execução do programa.   
 
 Por fim realizamos os asserts para confirmar se a mensagem que foi capturada confere com a mensagem que foi envia. Para isso armazenamos previamente o texto que será enviado em três Strings;
 
-![img_7.png](Imagens/img_7.png)
+![img_7](https://github.com/Pedro-Henrique-Santana-Xavier/Testes-Ulife-Projeto-A3/assets/113522505/9bc46870-9996-4de8-946f-3ee93cd97d8f)
 
 Em seguida capturamos a mensagem que foi enviada;
 
-![img_8.png](Imagens/img_8.png)
+![img_8](https://github.com/Pedro-Henrique-Santana-Xavier/Testes-Ulife-Projeto-A3/assets/113522505/c138dffa-9ffe-49f3-96ad-e3d148cd82b1)
 
 Nota-se que foi necessario acessar outro iframe para capturar o corpo da mensagem. E no final os asserts conferem as mensagens
 
-![img_9.png](Imagens/img_9.png)
+![img_9](https://github.com/Pedro-Henrique-Santana-Xavier/Testes-Ulife-Projeto-A3/assets/113522505/34bdab95-fcc3-475c-8a71-f27129e07cd6)
  
