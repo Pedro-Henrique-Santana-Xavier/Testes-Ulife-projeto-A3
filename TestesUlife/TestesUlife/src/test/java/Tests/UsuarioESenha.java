@@ -2,8 +2,8 @@ package Tests;
 
 public class UsuarioESenha {
 
-    private String user = "12522190539@ulife.com.br";
-    private String password = "220104";
+    private String user = "";
+    private String password = "";
 
     public String getUser() {
         return user;
