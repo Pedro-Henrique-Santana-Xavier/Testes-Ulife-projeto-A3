@@ -66,7 +66,7 @@ Também vale destacar as dependências utilizadas no projeto, que estão no arqu
 ![img_1](https://github.com/Pedro-Henrique-Santana-Xavier/Testes-Ulife-Projeto-A3/assets/113522505/96e7b7af-2ab4-49e6-8bcc-d370cc7e34fd)
 
 Este é o primeiro método da classe de test, como principais pontos de destaque, é possivel apontar a annotation @Test (linha 17)
-que define o método "DeveriaEfetuarLogin" como um método de para testes.
+que define o método "DeveriaEfetuarLogin" como um método para testes.
 
 Na linha 21 está sendo configuranda a propriedade do sistema chamada "webdriver.chrome.driver" com o caminho para o executável do ChromeDrive,
 essa linha de código é necessária para informar ao Selenium onde encontrar o executável do ChromeDriver no sistema.
